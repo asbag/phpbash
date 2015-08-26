@@ -1,0 +1,6 @@
+<?php
+
+$stack = debug_backtrace();
+$stack[count($stack) - 1];
+
+$result = shell_exec($cmd);

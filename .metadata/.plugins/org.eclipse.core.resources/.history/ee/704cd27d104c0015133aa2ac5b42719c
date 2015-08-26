@@ -1,0 +1,12 @@
+<?php
+
+$stack = debug_backtrace();
+var_dump($stack);
+exit;
+$firstFrame = $stack[count($stack) - 1];
+$initialFile = $firstFrame['file'];
+
+
+echo $initialFile;
+
+//$result = shell_exec($cmd);

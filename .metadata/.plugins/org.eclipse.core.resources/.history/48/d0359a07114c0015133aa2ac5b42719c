@@ -1,0 +1,7 @@
+<?php
+
+$cmd = realpath(dirname(__FILE__)) . '/file1.php';
+
+echo $cmd;
+exit;
+$result = shell_exec($cmd);

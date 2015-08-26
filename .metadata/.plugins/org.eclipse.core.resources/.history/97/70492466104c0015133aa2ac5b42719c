@@ -1,0 +1,10 @@
+<?php
+
+$stack = debug_backtrace();
+$firstFrame = $stack[count($stack) - 1];
+$initialFile = $firstFrame['file'];
+
+
+echo $initialFile;
+
+//$result = shell_exec($cmd);
